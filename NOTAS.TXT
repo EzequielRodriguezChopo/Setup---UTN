@@ -1,0 +1,8 @@
+Ctrl + B
+
+
+
+Funciones
+
+def algo (argumentos):
+    return pepito
