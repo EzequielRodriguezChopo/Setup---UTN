@@ -1,0 +1,1 @@
+print("Bienvenidos a mi tienda virtual")
