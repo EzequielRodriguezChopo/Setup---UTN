@@ -32,3 +32,24 @@ print(maximo_numero(3,5,6))
 # Diseñar una funcion que calcule la potencia de un número. La función debe recibir la base y 
 # el exponente como argumentos y devolver el resultado
 
+# Hecho una papa
+
+# Crear una función que imprima la tabla de multiplicar de un número recibido como parametro.
+# La función debe aceptar parámetros opcionales (inicio y fin) para definir el rango de multiplicación.
+# Por defecto es del 1 al 10.
+
+def tabla_multiplicar (numero, inicio=1 , fin = 10):
+    
+    for i in range(inicio, fin + 1):
+        resultado = i * numero
+        print(f"Numero {numero} x {i} = {resultado}")
+
+numero = int(input("Ingrese un número: "))
+opcion = input("Desea ingresar el inicio y el fin? Si - No: ")
+
+if(opcion == "Si"):
+    inicio = int(input("Ingrese el inicio: "))
+    fin = int(input("Ingrese el fin: "))
+    tabla_multiplicar(numero, inicio, fin)
+else:
+    tabla_multiplicar(numero)
