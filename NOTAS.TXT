@@ -1,8 +1,32 @@
-Ctrl + B
+Ctrl + B - Para sacar el menu de la izquierda (Donde estan los archivos)
 
-
+14 PARCIAL!!!!
 
 Funciones
 
 def algo (argumentos):
     return pepito
+
+Cual es el siguiente codigo el iterativo o el recursivo??
+El iterativo es más eficiente que el recursivo, ya que el 
+recursivo va apilando funciones y gasta mas recursos
+
+################################################################
+
+EJEMPLO Parcial:
+
+# Muestre aquellos productos mayor o menor a 4000
+# De esos productos cual es de mayor stock
+# De estos productos cual es el de mayor precio
+# MAXIMOS, MINIMOS, ORDENAMIENTO, FILTROS, QUE YO QUIERA AGEGAR UN ELEMENTO (def agregar)
+# Borrar todos los productos, "Vaciar la Matriz"
+# Va a pedir un menú:
+# 0 - Agregar un producto
+# 1 - Ver cual es el producto de mayor precio
+# Ver si existe el "x" producto, sino existe, debe imprimir "No existe el producto"
+
+productos = [["Coca-Cola", 2500, 5],
+             ["Hambuguesa", 5000, 8],
+             ["Alfajor", 1500, 6]]
+
+################################################################
