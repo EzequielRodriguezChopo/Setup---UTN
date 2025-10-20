@@ -14,7 +14,7 @@ def cargar_producto(inventario):
     precio_nuevo=float(input("\nIngrese el precio del producto a ingresar: "))
     stock_nuevo=input("\nIngrese la cantidad de stock a ingresar: ")
     producto_nuevo=[nombre_nuevo,precio_nuevo,stock_nuevo]
-    inventario.append(producto_nuevo)
+    inventario += [producto_nuevo]
     return inventario
 
 def buscar_producto (inventario):

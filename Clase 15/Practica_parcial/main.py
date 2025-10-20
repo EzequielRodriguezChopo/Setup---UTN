@@ -25,6 +25,45 @@ inventario = [
 
 def bubble_sort(inventario):
     longitud = len(inventario)
+    for i in range(longitud -1):
+        for j in range(longitud -1 -i):
+            if inventario[j][1]<inventario[j+1][1]:
+                aux = inventario[j+1][1]
+                inventario[j+1][1] = inventario[j][1]
+                inventario[j][1] = aux
+    return inventario
+inventario = bubble_sort(inventario)
+print(inventario)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+'''
+
+
+def bubble_sort(inventario):
+    longitud = len(inventario)
     for i in range(longitud-1):
         for j in range(longitud -1 -i):
             if inventario[j][1]<inventario[j+1][1]:
@@ -34,3 +73,5 @@ def bubble_sort(inventario):
     return inventario
 inventario = bubble_sort(inventario)
 print(inventario)
+
+'''

@@ -15,21 +15,22 @@ Ejemplo: Si la lista es [5, 3, 5, 7] y se elimina 5, la lista queda [3, 5, 7] y 
 
 '''
 
-def eliminar_primer_instancia(lista, elemento):
+def eliminar_primer_instancia(inventario, elemento):
     
 
-    for iterable in range(len(lista)):
+    for i in range(len(inventario)):
 
-        if elemento == lista[iterable]:
+        if elemento == inventario[i]:
             
-            lista = lista[iterable:]
-            return lista
+            inventario = inventario[:i] + inventario[i+1:]
+
+            return inventario
         else:
 
             pass
 
 
 lista = [5, 3, 5, 7]
-variable = 3
+variable = 5
 
 print(eliminar_primer_instancia(lista, variable))
