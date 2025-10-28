@@ -5,5 +5,7 @@ numeros.extend(letras)
 
 print(f"Ambas listas combinadas{numeros}")
 
-numeros.remove(0,1,2)
+for i in range(3):
+    numeros.pop(0)
+    numeros.pop()
 print(numeros)

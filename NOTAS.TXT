@@ -32,3 +32,5 @@ productos = [["Coca-Cola", 2500, 5],
 ################################################################
 
 VER lo de "Doc string"
+
+shift + alt + a    es para descomentar los ''' '''
