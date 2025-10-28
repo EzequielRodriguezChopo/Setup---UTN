@@ -41,3 +41,5 @@ for clave in usuario.values():  # Imprimo solo valores
 
 for clave, valor in usuario.items():  # Imprimo clave y valor
     print(f"Clave: {clave.capitalize()}, Valor: {valor}")
+
+print("Hola mundo")
