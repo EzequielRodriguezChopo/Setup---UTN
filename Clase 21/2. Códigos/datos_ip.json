@@ -1,0 +1,16 @@
+{
+    "status": "success",
+    "country": "Argentina",
+    "countryCode": "AR",
+    "region": "B",
+    "regionName": "Buenos Aires",
+    "city": "La Plata",
+    "zip": "1900",
+    "lat": -34.9309,
+    "lon": -57.9417,
+    "timezone": "America/Argentina/Buenos_Aires",
+    "isp": "Telecom Argentina S.A",
+    "org": "Fibertel",
+    "as": "AS7303 Telecom Argentina S.A.",
+    "query": "190.18.193.83"
+}

@@ -1,18 +1,18 @@
-# En el ordenamiento de burbuja, el primer bucle for i in range(n-1) 
-# recorre el arreglo hasta la penúltima posición porque no es necesario 
+# En el ordenamiento de burbuja, el primer bucle for i in range(n-1)
+# recorre el arreglo hasta la penúltima posición porque no es necesario
 # llegar hasta el último elemento en este bucle.
 
-# range(n-1) en el bucle externo: El objetivo de este bucle externo es 
+# range(n-1) en el bucle externo: El objetivo de este bucle externo es
 # controlar las pasadas necesarias para ordenar completamente el arreglo.
-# Cada iteración coloca el elemento más grande restante en su lugar final. 
+# Cada iteración coloca el elemento más grande restante en su lugar final.
 # Una vez que el último elemento está ordenado, no es necesario hacer otra pasada.
-# Como la última comparación en cada pasada es entre los elementos n-2 y n-1, 
+# Como la última comparación en cada pasada es entre los elementos n-2 y n-1,
 # la última pasada ya no necesita revisar el último elemento, de ahí el n-1.
-# Si el bucle externo recorriera hasta n, haría una iteración adicional 
+# Si el bucle externo recorriera hasta n, haría una iteración adicional
 # innecesaria, ya que el último elemento estará ordenado después de las primeras n-1 pasadas.
 
 # ordenamiento burbuja sin variable auxiliar
-""" def ord_burbuja(arreglo):
+"""def ord_burbuja(arreglo):
     n = len(arreglo)
 
     for i in range(n-1):       # <-- bucle padre
@@ -22,25 +22,30 @@
 
 elementos = [8, 3, 1, 19, 14]
 ord_burbuja(elementos)
-print(elementos) """
-
+print(elementos)"""
 
 
 # ordenamiento burbuja con variable auxiliar
 def ord_burbuja(arreglo):
     n = len(arreglo)
-    
-    for i in range(n-1):       # <-- bucle padre
-        for j in range(n-1-i): # <-- bucle hijo
-            if arreglo[j] > arreglo[j+1]:
-                aux = arreglo[j+1]
-                arreglo[j+1] = arreglo[j]
+
+    for i in range(n - 1):  # <-- bucle padre
+        for j in range(n - 1 - i):  # <-- bucle hijo
+            if arreglo[j] > arreglo[j + 1]:
+                aux = arreglo[j + 1]
+                arreglo[j + 1] = arreglo[j]
                 arreglo[j] = aux
 
-elementos = [8, 3, 1, 19, 14]
+
+elementos = [
+    ["Laptop", 15000.00, 10],
+    ["Silla", 200.00, 50],
+    ["Libro", 15.00, 100],
+    ["Monitor", 300.00, 30],
+]
+# elementos = [8, 3, 1, 19, 14]
 ord_burbuja(elementos)
 print(elementos)
-
 
 
 # ordenamiento burbuja con bucle while

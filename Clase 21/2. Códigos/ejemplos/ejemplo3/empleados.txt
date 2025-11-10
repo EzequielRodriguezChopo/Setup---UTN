@@ -1,0 +1,6 @@
+Nombre,Inasistencias,Sueldo
+Juan Pérez,3,2500
+María López,2,2800
+Carlos García,0,3200
+Ana Martínez,1,2700
+Luis Ramírez,4,2400

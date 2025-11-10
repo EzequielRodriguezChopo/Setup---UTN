@@ -1,0 +1,20 @@
+{
+    "nombre": "Martin",
+    "apellido": "Gomez",
+    "lenguajes": ["JavaScript", "C#", "Python"],
+    "edad": 30,
+    "experiencia": [
+        {
+            "empresa": "Microsoft",
+            "antiguedad": 2
+        },
+        {
+            "empresa": "Google",
+            "antiguedad": 3
+        }
+    ],
+    "calle": {
+        "nombre": "Falsa",
+        "numero": 123
+    }
+}

@@ -1,0 +1,10 @@
+Camiseta de algodón,19.99
+Zapatos deportivos,49.95
+Pantalones vaqueros,29.99
+Reloj de pulsera,79.99
+Mochila de viaje,39.50
+Smartphone de última generación,599.99
+Auriculares inalámbricos,79.95
+Tableta digital,249.00
+Gafas de sol,14.99
+Libro bestseller,12.50

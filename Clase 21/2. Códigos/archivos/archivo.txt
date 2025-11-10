@@ -1,0 +1,3 @@
+En el mundo de la programación, Python es un lenguaje increíblemente popular.
+Su sintaxis es clara y sencilla, facilitando el aprendizaje y uso. 
+Además, permite trabajar en diversas áreas como el desarrollo web, la ciencia de datos y la inteligencia artificial.

@@ -1,0 +1,43 @@
+readline(): 
+*Esto puede ser útil cuando se quiere procesar un archivo línea por línea, en lugar de cargar todo el contenido en la memoria.
+*Cuando el archivo es muy grande tambien podriamos ir viendo linea por linea.
+*Puede ser útil cuando se necesita trabajar con líneas específicas en lugar de procesar todas.
+
+readlines(): 
+*Si se necesita acceder a todas las líneas del archivo y se desea almacenarlas en una lista, readlines() es conveniente.
+*Esto es útil cuando se trabaja con archivos CSV y se quiere procesar los datos línea por línea.
+
+seek():
+*Operaciones de Lectura/Escritura en Regiones Específicas: Algunas aplicaciones pueden requerir la lectura o escritura de datos solo en ciertas secciones de un archivo. seek() te permite posicionarte en la ubicación deseada antes de realizar operaciones.
+*División y Combinación de Archivos: Si necesitas dividir un archivo en partes más pequeñas o combinar varios archivos en uno solo, seek() es útil para ajustar la posición del puntero y realizar las operaciones correspondientes.
+*Procesamiento de Datos Estructurados: En archivos que contienen datos estructurados, como registros de bases de datos o datos CSV, puedes usar seek() para moverte a la posición correcta antes de realizar operaciones de lectura o escritura.
+*Implementación de Algoritmos de Búsqueda Eficientes: Para realizar búsquedas eficientes en grandes archivos, puedes usar seek() para saltar a posiciones específicas basadas en algún índice o criterio, evitando así tener que leer todo el archivo.
+
+
+##### ---------- #####
+En Python, un context manager es un objeto que define los métodos __enter__ y __exit__, que se utilizan para establecer y liberar recursos cuando se entra y sale de un bloque de código.
+
+Los context managers son comúnmente utilizados con la declaración with para gestionar automáticamente la adquisición y liberación de recursos, como archivos, conexiones de red o bases de datos.
+La ventaja principal es que aseguran que los recursos se liberen correctamente, incluso si ocurre una excepción.
+
+
+##### ---------- #####
+¿Que significa serializar y seserializar un archivo?
+Serializar un archivo significa convertir datos en un formato que se puede almacenar 
+o transmitir fácilmente, como JSON, XML, binario o cadena de texto. Deserializar es el proceso 
+inverso: tomar los datos en ese formato y reconstruir el objeto original. Esto es 
+especialmente útil para guardar el estado de un programa, enviar datos entre sistemas 
+o simplemente almacenar datos de una manera que se pueda leer y volver a usar más tarde.
+
+import json
+
+datos = {"nombre": "Juan", "edad": 30, "ciudad": "La Plata"}
+with open('datos.json', 'w') as archivo:
+    json.dump(datos, archivo)
+
+with open('datos.json', 'r') as archivo:
+    datos_cargados = json.load(archivo)
+print(datos_cargados)
+
+Esto convierte el diccionario a una cadena JSON para guardarlo en un archivo y luego lo 
+convierte de nuevo a un diccionario cuando lo lees.

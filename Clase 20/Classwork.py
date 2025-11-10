@@ -15,6 +15,7 @@ print(len(conjunto))
 
 #########################################
 
+"""
 
 usuario = {"nombre": "Sara", "edad": 24, "documento": 27456877}
 print(usuario)
@@ -43,3 +44,34 @@ for clave, valor in usuario.items():  # Imprimo clave y valor
     print(f"Clave: {clave.capitalize()}, Valor: {valor}")
 
 print("Hola mundo")
+
+
+"""
+
+
+def ord_burbuja(arreglo):
+    n = len(arreglo)
+    print(n)
+
+    for i in range(n - 1):  # <-- bucle padre
+        for j in range(n - 1 - i):  # <-- bucle hijo
+            if arreglo[j][1] > arreglo[j + 1][1]:
+                aux = arreglo[j + 1]
+                arreglo[j + 1] = arreglo[j]
+                arreglo[j] = aux
+
+
+elementos = [
+    ["Laptop", 15000.00, 10],
+    ["Silla", 200.00, 50],
+    ["Libro", 15.00, 100],
+    ["Monitor", 300.00, 30],
+]
+# elementos = [8, 3, 1, 19, 14]
+ord_burbuja(elementos)
+print(elementos)
+menor = float("-inf")
+if menor < 10:
+    print("Funciona")
+else:
+    print("No funciona")
